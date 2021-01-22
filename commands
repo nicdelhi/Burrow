@@ -5,8 +5,8 @@ sudo docker-compose up
 curl http://localhost:8000/v3/kafka
 curl http://localhost:8000/v3/kafka/local/topic
 curl http://localhost:8000/v3/kafka/local/consumer
-curl http://localhost:8000/v3/kafka/local/list/consumer
-curl http://localhost:8000/v3/kafka/local/consumer
+curl http://localhost:8000/v3/kafka/local/consumer/my-group/lag
+
 git clone https://github.com/jirwin/burrow_exporter.git
 cd  burrow_exporter/
 sudo docker build -t burrow_exporter .
