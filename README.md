@@ -54,7 +54,10 @@ Install [Docker Compose](https://docs.docker.com/compose/) and then:
    ```
    docker-compose down; docker-compose up
    ```
-
+2.1. Add a setting in /etc/hosts
+     127.0.0.1 kafka
+2.2 In the docker compose file, make sure topic name, replication factor and leader is mentioned properly
+    "test-topic1:2:1,test-topic2:1:1,test-topic3:1:1"
 3. Some test topics have already been created by default and Burrow can be accessed on `http://localhost:8000/v3/kafka`.
 
 
