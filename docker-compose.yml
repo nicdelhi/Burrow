@@ -3,8 +3,8 @@ services:
   burrow:
     build: .
     volumes:
-      - ${PWD}/docker-config:/etc/burrow/
-      - ${PWD}/tmp:/var/tmp/burrow
+      - /docker-config:/etc/burrow/
+      - /tmp:/var/tmp/burrow
     ports:
       - 8000:8000
     depends_on:
